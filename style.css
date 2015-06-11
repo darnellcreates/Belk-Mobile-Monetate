@@ -1,0 +1,325 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+	color: lightblue;
+    font-size: 20px;
+    margin-top: 15px;
+	margin-bottom: 65px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: lightblue;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+.intro{
+background: #00bbff url('img/egg-shell.png');
+padding: 15%;
+margin-left: -50px;
+}
+
+.space{
+    margin-left:50px;
+}
+
+.headtext{
+    font-size: 175%;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.sectiontext{
+ color: #333;
+    font-size: 140%;
+    font-weight: bold;
+	/**font-family: 'Dosis', sans-serif **/
+	text-align: center;
+}
+
+/***** GALLERY & MODAL CSS ******/
+
+@charset "UTF-8";
+/*
+ * Bootstrap Image Gallery CSS 3.0.0
+ * https://github.com/blueimp/Bootstrap-Image-Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.blueimp-gallery .modal-body {
+	position: relative;
+	text-align: center;
+	padding: 0 0 56.25% 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+.blueimp-gallery .modal-footer {
+	margin: 0;
+}
+.blueimp-gallery .modal-body img,
+.blueimp-gallery .modal-body .video-content video,
+.blueimp-gallery .modal-body .video-content iframe,
+.blueimp-gallery .modal-body .video-content a {
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.blueimp-gallery .modal-body .video-content video {
+ 	display: none;
+}
+.blueimp-gallery .modal-body .video-playing video {
+	display: block;
+}
+.blueimp-gallery .modal-body .video-content iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+	left: 100%;
+}
+.blueimp-gallery .modal-body .video-playing iframe {
+	left: 0;
+}
+.blueimp-gallery .modal-body .video-playing img,
+.blueimp-gallery .modal-body .video-playing a {
+ 	display: none;
+}
+.blueimp-gallery .modal-body .video-content a {
+	cursor: pointer;
+}
+.blueimp-gallery .modal-body .video-content a:after {
+	font-family: "Glyphicons Halflings";
+	-webkit-font-smoothing: antialiased;
+	content: "\e029";
+	font-size: 64px;
+	line-height: 64px;
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	top: 50%;
+	margin: -32px 0 0 -32px;
+}
+.blueimp-gallery .modal-body .video-loading a {
+	background: url(../img/loading.gif) center no-repeat;
+	background-size: 64px 64px;
+}
+.blueimp-gallery .modal-body .video-loading a:after {
+	content: none;
+}
+
+@media screen and (min-width: 768px) {
+  .blueimp-gallery .modal-dialog {
+    right: auto;
+    left: auto;
+	width: auto;
+    max-width: 900px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.features{
+   color: darkgoldenrod;
+}
+
+footer h6{
+    text-align: right;
+}
+
+.NotableFeatures{
+    position: relative;
+    top: 0px;
+    left: -16px;
+    width:160%;
+    height: 250px;
+    overflow: hidden;
+
+}
+
+.slide{
+    cursor: move;
+    height: 220px;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.img-title{
+    background: #333;
+    border-radius: 6px;
+    top: -7px;
+    color: white;
+    font-size: 23px;
+    padding: 5px;
+    position: absolute;
+}
+
+.subcattext{
+    color: #00a1db;
+
+}
+
+#Notable-Features img:hover {
+    opacity: .6;
+}
+
+.experienceslist{
+list-style: none;
+}
+
+.experienceslist .odd{
+background: #00B2F3;
+padding: 10px;
+margin: 10px;
+border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.experienceslist .even{
+background: #8CD7F6;
+border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.experienceslist li{
+    padding: 10px;
+    margin: 10px;
+}
+
+.fyinote{
+color: saddlebrown;
+}
+
+.container.small li {
+    list-style-type: none;
+    text-indent: 5px;
+}
+
+.panel-heading > a {
+    color: #333;
+}
